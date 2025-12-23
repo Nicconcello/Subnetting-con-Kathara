@@ -1,0 +1,13 @@
+ip address add 10.42.146.133/30 dev eth0
+
+ip address add 10.42.146.129/30 dev eth1
+
+ip address add 10.42.146.181/30 dev eth2
+
+ip route add 10.42.0.0/16 via 10.42.146.134
+
+ip route add 10.42.32.0/32 via 10.42.146.182
+
+iptables -t nat -A POSTROUTING -o eth2 -j MASQUERADE
+
+cat /shared/etc_hosts >> /etc/hosts
