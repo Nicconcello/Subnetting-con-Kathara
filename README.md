@@ -31,7 +31,7 @@ Per permettere agli host interni (es. sede **Liguria**, IP `10.42.144.2`) di com
 
 ## 🚀 Istruzioni per l'Avvio
   Avviare il laboratorio:
-    ```bash
+    ```
     kathara lstart
     ```
 
